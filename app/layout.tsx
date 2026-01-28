@@ -25,7 +25,7 @@ export const metadata = {
     title: "1 𝓺𝓳𝓬's blog",
     description:
       "1 𝓺𝓳𝓬 is the Founder, a software engineer, and the creator of 2qjc, 3qjc, 4qjc and other open source libraries.",
-    url: "https://1qjc.bet",
+    url: "https://1qjc.bet/blog",
     siteName: "1 𝓺𝓳𝓬's blog",
     images: ["/opengraph-image"],
   },
@@ -34,7 +34,7 @@ export const metadata = {
     site: "@0x1qjc",
     creator: "@0x1qjc",
   },
-  metadataBase: new URL("https://1qjc.bet"),
+  metadataBase: new URL("https://1qjc.bet/blog"),
 };
 
 export const viewport = {

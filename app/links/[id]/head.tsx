@@ -17,7 +17,7 @@ export default function LinkHead({ params }: { params: { id: string } }) {
       <meta name="twitter:site" content="@0x1qjc" />
       <meta
         property="og:image"
-        content={`https://1qjc.bet/og/${link.image}`}
+        content={`https://1qjc.bet/blog/og/${link.image}`}
       />
     </>
   );
