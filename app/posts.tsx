@@ -10,7 +10,7 @@ type SortSetting = ["date" | "views", "desc" | "asc"];
 const fetcher = (url: string) => fetch(url).then(res => res.json());
 
 export function Posts({ posts: initialPosts }) {
-  const { data: posts } = useSWR("/api/posts", fetcher, {
+  const { data: posts } = useSWR("/blog/api/posts", fetcher, {
     fallbackData: initialPosts,
     refreshInterval: 5000,
   });
@@ -43,9 +43,8 @@ function List({ posts }) {
               `}
               >
                 <span
-                  className={`py-2 flex grow items-center ${
-                    !firstOfYear ? "ml-10 md:ml-14" : ""
-                  }`}
+                  className={`py-2 flex grow items-center ${!firstOfYear ? "ml-10 md:ml-14" : ""
+                    }`}
                 >
                   {firstOfYear && (
                     <span className="w-10 md:w-14 inline-block self-start shrink-0 text-neutral-500 text-xs dark:text-neutral-500 mt-0.5">

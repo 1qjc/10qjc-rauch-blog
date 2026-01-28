@@ -2,6 +2,7 @@ const withMDX = require("@next/mdx")();
 
 module.exports = withMDX({
   assetPrefix: "/blog-static",
+  basePath: "/blog",
   pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],
   experimental: {
     mdxRs: true,
@@ -35,6 +36,14 @@ module.exports = withMDX({
         search: "",
       },
     ],
+  },
+  async rewrites() {
+    return [
+      {
+        source: '/blog/api/:path*',
+        destination: '/api/:path*', // The internal path Next.js uses
+      },
+    ];
   },
   redirects() {
     return [
