@@ -7,8 +7,8 @@ import { join } from "path";
 import commaNumber from "comma-number";
 
 // Image
-const rauchgPhoto = toArrayBuffer(
-  readFileSync(join(process.cwd(), "public/images/rauchg.png"))
+const qjcPhoto = toArrayBuffer(
+  readFileSync(join(process.cwd(), "public/images/1qjc.png"))
 );
 
 // Fonts
@@ -33,27 +33,26 @@ export async function GET() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 tw="h-74"
-                alt="Guillermo Rauch"
+                alt="1 𝓺𝓳𝓬"
                 // @ts-ignore
-                src={rauchgPhoto}
+                src={qjcPhoto}
               />
             </div>
 
             <div tw="flex flex-col px-10 grow text-[28px] h-70 justify-center">
               <div tw="text-[64px] mb-7" style={font("Geist Medium")}>
-                Guillermo Rauch
+                1 𝓺𝓳𝓬
               </div>
               <div tw="flex mb-5" style={font("Geist Mono")}>
-                <span tw="text-gray-400 mr-3">&mdash;</span> CEO and Founder of
-                Vercel
+                <span tw="text-gray-400 mr-3">&mdash;</span> the Founder
               </div>
               <div tw="flex mb-5" style={font("Geist Mono")}>
-                <span tw="text-gray-400 mr-3">&mdash;</span> Creator of Next.js,
-                Socket.IO, Mongoose
+                <span tw="text-gray-400 mr-3">&mdash;</span> Creator of 2qjc,
+                3qjc, 4qjc
               </div>
               <div tw="flex" style={font("Geist Mono")}>
-                <span tw="text-gray-400 mr-3">&mdash;</span> Lives in San
-                Francisco, CA
+                <span tw="text-gray-400 mr-3">&mdash;</span> Lives in Discovery
+                Bay, HK
               </div>
             </div>
           </div>
