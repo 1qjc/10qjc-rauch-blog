@@ -84,7 +84,7 @@ export async function Image({
           width={width * factor}
           height={height * factor}
           alt={alt ?? ""}
-          src={src}
+          src={"/blog" + src}
           unoptimized={src.endsWith(".gif")}
         />
 
