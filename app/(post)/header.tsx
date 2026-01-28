@@ -77,7 +77,7 @@ function Views({ id, mutate, defaultValue }) {
   useEffect(() => {
     if ("development" === process.env.NODE_ENV) return;
     if (!didLogViewRef.current) {
-      const url = "/api/view?incr=1&id=" + encodeURIComponent(id);
+      const url = "/blog/api/view?incr=1&id=" + encodeURIComponent(id);
       fetch(url)
         .then(res => res.json())
         .then(obj => {
