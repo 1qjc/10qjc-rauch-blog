@@ -1,5 +1,5 @@
-import redis from "@/app/redis";
-import postsData from "@/app/posts.json";
+import redis from "@/app/blog/redis";
+import postsData from "@/app/blog/posts.json";
 import commaNumber from "comma-number";
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";

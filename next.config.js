@@ -2,7 +2,6 @@ const withMDX = require("@next/mdx")();
 
 module.exports = withMDX({
   assetPrefix: "/blog-static",
-  basePath: "/blog",
   pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],
   experimental: {
     mdxRs: true,

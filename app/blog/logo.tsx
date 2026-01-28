@@ -10,7 +10,7 @@ export function Logo() {
         <span className="cursor-default pr-2">1 𝓺𝓳𝓬</span>
       ) : (
         <Link
-          href="/"
+          href="/blog"
           className="hover:bg-neutral-200 dark:hover:bg-neutral-700 p-2 rounded-2xl -ml-2 transition-[background-color]"
         >
           1 𝓺𝓳𝓬
