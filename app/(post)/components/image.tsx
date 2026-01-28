@@ -36,6 +36,7 @@ export async function Image({
           const url =
             "https://" +
             process.env.VERCEL_URL +
+            "/blog" +
             src +
             `?image_bot_bypass=${encodeURIComponent(process.env.IMAGE_BOT_BYPASS_SECRET!)}&x-vercel-protection-bypass=${encodeURIComponent(process.env.VERCEL_AUTOMATION_BYPASS_SECRET!)}`;
           const response = await fetch(url);
