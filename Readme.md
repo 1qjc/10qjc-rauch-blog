@@ -1,6 +1,6 @@
 # blog
 
-This is the blog that powers `1qjc.bet`, built on
+This is the blog that powers `1qjc.bet/blog`, built on
 [next.js](https://nextjs.org/) and
 deployed to the cloud via [Vercel](https://vercel.com).
 
